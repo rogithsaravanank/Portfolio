@@ -66,63 +66,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Java Developer Portfolio</title>
+    <title>Rogith Saravanan - Java Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>John Doe</h1>
-        <p>Experienced Java Developer with 5+ years in large-scale enterprise applications.</p>
+        <div class="container">
+            <h1>Rogith Saravanan</h1>
+            <p>Experienced Java Developer with 5+ years in large-scale enterprise applications.</p>
+        </div>
     </header>
 
-    <main>
+    <nav>
+        <ul>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#problem-solving">Problem-Solving</a></li>
+            <li><a href="#strengths">Strengths</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
         <section id="skills">
             <h2>Skills</h2>
-            <ul>
-                <li>Java Development</li>
-                <li>Spring Framework</li>
-                <li>GitHub Actions</li>
-                <li>Jenkins</li>
-                <li>MySQL</li>
-                <li>Concourse</li>
-            </ul>
+            <div class="grid">
+                <div class="card">Java Development</div>
+                <div class="card">Spring Framework</div>
+                <div class="card">GitHub Actions</div>
+                <div class="card">Jenkins</div>
+                <div class="card">MySQL</div>
+                <div class="card">Concourse</div>
+            </div>
         </section>
 
         <section id="education">
             <h2>Education</h2>
-            <div class="education-item">
-                <h3>Madras University</h3>
-                <p>Master of Business Administration (M.B.A.) in Systems Management (2021 - 2023)</p>
-            </div>
-            <div class="education-item">
-                <h3>Chennai Institute of Technology</h3>
-                <p>Bachelor of Engineering (B.E.) in Electronics and Communication Engineering (2015 - 2019)</p>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Madras University</h3>
+                    <p>Master of Business Administration (M.B.A.) in Systems Management (2021 - 2023)</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Chennai Institute of Technology</h3>
+                    <p>Bachelor of Engineering (B.E.) in Electronics and Communication Engineering (2015 - 2019)</p>
+                </div>
             </div>
         </section>
 
         <section id="experience">
             <h2>Experience</h2>
-            <div class="experience-item">
-                <h3>Comcast India Engineering Center (CIEC)</h3>
-                <p>Development Engineer 2 (12/2022 - Present)</p>
-                <ul>
-                    <li>Developed RESTful APIs using Spring Boot and Spring JPA.</li>
-                    <li>Implemented CI/CD pipeline using GitHub and Concourse for automated build, test, and deployment processes.</li>
-                    <li>Gained foundational knowledge of Angular Material to address defects and implement minor enhancements.</li>
-                    <li>Developed high-traffic backend services with a focus on optimal performance.</li>
-                    <li>Involved in Developing Applications with Full Software Development Life Cycle (SDLC) using agile and waterfall methodologies.</li>
-                </ul>
-            </div>
-            <div class="experience-item">
-                <h3>Tata Consultancy Services</h3>
-                <p>Application Developer - Java Microservices (05/2019 - 12/2022)</p>
-                <ul>
-                    <li>Worked on Development of Restful APIs using Spring Boot and Spring JPA.</li>
-                    <li>Implemented securities trading and corporate action processes, ensuring compliance with SWIFT ISO 15022 & 20022 standards.</li>
-                    <li>Developed code for applications such as Cash management, Off Market trading, and corporate action functionality.</li>
-                    <li>Developed a microservice based on Business requirements and implemented the flow between Oracle DB2 and the client.</li>
-                    <li>Extensive experience in developing large-scale enterprise applications using Java.</li>
-                </ul>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Comcast India Engineering Center (CIEC)</h3>
+                    <p>Development Engineer 2 (12/2022 - Present)</p>
+                    <ul>
+                        <li>Developed RESTful APIs using Spring Boot and Spring JPA.</li>
+                        <li>Implemented CI/CD pipeline using GitHub and Concourse for automated build, test, and deployment processes.</li>
+                        <li>Gained foundational knowledge of Angular Material to address defects and implement minor enhancements.</li>
+                        <li>Developed high-traffic backend services with a focus on optimal performance.</li>
+                        <li>Involved in Developing Applications with Full Software Development Life Cycle (SDLC) using agile and waterfall methodologies.</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <h3>Tata Consultancy Services</h3>
+                    <p>Application Developer - Java Microservices (05/2019 - 12/2022)</p>
+                    <ul>
+                        <li>Worked on Development of Restful APIs using Spring Boot and Spring JPA.</li>
+                        <li>Implemented securities trading and corporate action processes, ensuring compliance with SWIFT ISO 15022 & 20022 standards.</li>
+                        <li>Developed code for applications such as Cash management, Off Market trading, and corporate action functionality.</li>
+                        <li>Developed a microservice based on Business requirements and implemented the flow between Oracle DB2 and the client.</li>
+                        <li>Extensive experience in developing large-scale enterprise applications using Java.</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
@@ -141,13 +159,15 @@
 
         <section id="courses">
             <h2>Courses</h2>
-            <div class="course-item">
-                <h3>GraphQL</h3>
-                <p>Completed an in-depth course on GraphQL, schema design, and integration with modern web technologies.</p>
-            </div>
-            <div class="course-item">
-                <h3>System Design</h3>
-                <p>Completed foundational System Design course, gaining proficiency in concepts like scalability, distributed systems, and DBMS.</p>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>GraphQL</h3>
+                    <p>Completed an in-depth course on GraphQL, schema design, and integration with modern web technologies.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>System Design</h3>
+                    <p>Completed foundational System Design course, gaining proficiency in concepts like scalability, distributed systems, and DBMS.</p>
+                </div>
             </div>
         </section>
 
@@ -158,8 +178,13 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 John Doe. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 ©RogithSaravananK. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
+
 
