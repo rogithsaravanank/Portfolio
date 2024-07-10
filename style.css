@@ -1,4 +1,4 @@
-body{
+/* body{
 
    margin : 0;
    text-align: center;
@@ -6,11 +6,6 @@ body{
   background-color: #889E81;
   font-family: 'Orbitron', sans-serif;
 }
-/*div{
-
-      border: 0;
-    background-color: #B4C6A6;
-}*/
 h1{
                  margin-top: 0;
                    font-family: 'Jua', sans-serif;
@@ -84,9 +79,7 @@ border-color: grey;
 }
 
 
-/*.clean{
-  clear: left;
-}*/
+
 
 
 .btn {
@@ -139,4 +132,69 @@ text-decoration: none;
 }
 a:hover{
   color:white;
+} */
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #ccc;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+header p {
+  font-size: 1.2em;
+  margin: 5px 0 0;
+}
+
+section {
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+section h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.education-item, .experience-item, .course-item {
+  margin-bottom: 15px;
+}
+
+.education-item h3, .experience-item h3, .course-item h3 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background: #f4f4f4;
+  margin: 5px 0;
+  padding: 10px;
+  border-left: 4px solid #333;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
