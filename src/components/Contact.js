@@ -26,13 +26,18 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    let response = await fetch("http://localhost:5000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(formDetails),
-    });
+    // let response = await fetch("http://localhost:5000/contact", {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json;charset=utf-8",
+    //   },
+    //   body: JSON.stringify(formDetails),
+    // });
+    // Simulating a delay as if a real server request is being made
+    await new Promise(resolve => setTimeout(resolve, 1000));
+
+    // Mocking a successful response
+    const response = { ok: true, json: async () => ({ code: 200 }) };
     setButtonText("Send");
     let result = await response.json();
     setFormDetails(formInitialDetails);
